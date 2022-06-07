@@ -1,0 +1,91 @@
+body{
+    margin: 0; /*Margen*/
+    padding: 0; /*Margen*/
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; /*altura*/
+    background-color: #352b48; /*color de fondo*/
+    font-family: sans-serif; /*Fuente*/
+    background-color: red;
+}
+.calendar{
+    position: relative;
+    background-color: green;
+    width: 4000px;
+    height: 570px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 15px solid #fff; /*marco*/
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+.calendar .date{
+    width: 550px;
+    padding: 30px;
+    box-sizing: border-box; / * Reglas de tamaño de caja * /
+}
+.calendar .date h3{
+    margin: 0 0 20px; 
+    padding: 0;
+    font-size: 24px; /*tamaño de fuente*/
+    font-weight: 500; / * Dimensión de fuente * /
+    text-align: center; / * Fuente centrada * /
+    user-select: none; / * No seleccionable * /
+    text-transform: capitalize; / * Capitaliza la primera letra * /
+}
+.calendar .date .days{
+    display: flex;
+    flex-wrap: wrap; / * Salto de línea * /
+}
+.calendar .date .days .number.active{
+    background-color: #362b48;
+    color: #fff;
+    cursor: pointer; / * Estilo del mouse * /
+    border-radius: 50%; / * Esquinas redondeadas del marco * /
+}
+.calendar .date .days .day,
+.calendar .date .days .number{
+    width: 60px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.calendar .text{
+    position: relative; /*Ubicación*/
+    top:0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+
+    user-select: none;
+}
+.calendar .text{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+   
+}
+
+.primer {
+
+    float: left;
+    background-color: red;
+
+}
+.segon{
+
+    float: left;
+    background-color: green;
+}
+button .tercer{
+
+    float: left;
+    background: aqua;
+
+}

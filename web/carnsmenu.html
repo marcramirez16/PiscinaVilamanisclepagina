@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpot" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estios3.css">
+    <link rel="stylesheet" href="tituloplatosestilos.css">
+    <link rel="icon" href="oraneta.jpg">
+  
+  
+    
+    <title>CARNS</title>
+    
+</head>
+<body>
+    <div class = "prova">
+        <p class="carnsmaterial" id="ham">MENU: </p>
+        <a href = "index.html" class = "tornar">
+            TORNAR A L'INICI
+        </a>
+        <h5>Mira els plats amb preus i espera al cambrer perque et prengui nota: </h5>
+<div class = caixa style= "height: 350px; width: 696px; overflow: auto;">
+    <nav class="barra">
+        <ul class = "horitzontal">
+            <li class = carn>
+                
+                <br><br><br><br><br>
+               
+                    <p class = "tituls">TAPAS</p>
+              
+                <br><br>
+                <a>
+                <button id = "hamburguesa"><a>hamburguesa</a></button>
+                </a>
+                <br><br><br>
+                <a>
+                <button id = "entrecot"><a>ENTRECOT</a></button>   
+                </a>
+                <br><br><br>
+                <p class = "tituls">AMANIDES</p>
+                <br><br>
+                <p class = "tituls">BRASA</p>
+                <br><br>
+                <p class = "tituls">ESPECIALS</p>
+                <br><br>
+                <p class = tituls>VEGUDES</p>
+                <br><br>
+                <p class = "tituls">GELATS</p>
+            </li>
+            
+            <br><br><br><br>
+           
+           
+        </ul>
+     
+       
+    </nav>
+    </div>
+    <br>
+    <p>Total: </p>
+    <p id = "resultat" class = "resultat"></p>
+    <br>
+    <br>
+    
+    <section class="home">
+        <a href="#" target="_blank"></a>
+      <div class="open-overlay">
+        <span class="bar-top"></span>
+        <span class="bar-middle"></span>
+        <span class="bar-bottom"></span>
+      </div>
+    </section>
+    
+    <!--<div id = "fotoimatge" class = "fotoimatge">
+    </div>-->
+
+        <div id = "foto" class = "foto" >
+
+        </div>
+   
+        <!-- link per tallar fotos: https://express.adobe.com/es-ES/sp/design/post/urn:aaid:sc:EU:c14573e6-d988-47fb-bacd-
+            f30b73bac047?workflow=quicktask&qId=remove-background&autoDownload=true-->
+            <!--div acavat:fora de la barra de clickar-->
+    
+ </div>
+ <div class = "humo"><img src="C:\Users\Marc\Desktop\web\humo.png"/></div>
+
+
+ <script type="text/javascript">
+//ficar boto
+    var botonElement = document.getElementById("hamburguesa");
+
+
+    var botonElement2 = document.getElementById("entrecot");
+
+//ficar on es mostri al apretar boto
+    var pElement = document.getElementById("resultat");
+    var pElement2 = document.getElementById("resultat2");
+    var contador = 0;
+    botonElement.onclick = function () {
+            contador = contador +3.2;
+            pElement.textContent = contador;
+
+            document.getElementById("foto").innerHTML = '<img src ="\hamburguesa.jpg" style = "width:215px; height:215px" float = right>';
+           
+            
+        }
+    botonElement2.onclick = function () {
+            contador = contador + 2;
+            pElement.textContent = contador;
+
+    }
+    
+</script>
+
+
+
+
+    </body>
+</html>
